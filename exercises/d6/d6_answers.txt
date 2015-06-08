@@ -1,0 +1,27 @@
+E1:
+1) git-init creates an empty repository, or reinitializesan existing one. 
+
+2) "git add" stages a new file to your repository, and git commit updates your git changes. 
+
+3) staged are things that are about to be committed (updated on github) and commit is things that have already been updated. I think of staged items as pending items.
+
+4) git add --all; git commit 
+
+5) You can go to github's site to see your previous commits.
+
+6) It's important for sharing, and for saving and accessing your work/process (in case your machine fails you)
+
+7) You can download it from github, and then work on it from there. 
+
+8) :q
+
+E2:
+1) "GitHub is a hosting service for Git repositories. So they are not the same thing: Git the tool, GitHub the service for projects that uses Git."
+http://stackoverflow.com/questions/13321556/difference-between-git-and-github
+
+2) Because it has the most people trying to take it down daily.
+
+3) I think it allows you to update/share one specific part of your project
+
+4) It allows you to access the current state of the uploaded project
+
