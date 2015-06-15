@@ -1,0 +1,10 @@
+<h1> Hello! Welcome to my petition's page! :) </h1>
+<p> These are the petitions for today: </p>
+
+<ol>
+<% @petitions.each do |petition| %>
+
+	<li><%= petition %></li>
+
+<% end %>
+</ol>
