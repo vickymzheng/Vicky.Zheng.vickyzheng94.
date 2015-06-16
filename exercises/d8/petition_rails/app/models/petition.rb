@@ -1,4 +1,5 @@
 #Model 
+require 'time'
 class Petition < ActiveRecord::Base
 	def self.get_petitions
 		response = RestClient.get "https://api.whitehouse.gov/v1/petitions.json"
@@ -9,8 +10,8 @@ class Petition < ActiveRecord::Base
 			{title: petition["title"],
 			body: petition["body"], 
 			status: petition["status"], 
-			created: petition["created"],
-			deadline: petition["deadline"],
+			created: Time.at(petition["created"]),
+			deadline: Time.at(petition["deadline"]),
 			signatures: petition["signatureCount"]}
 		end
 
