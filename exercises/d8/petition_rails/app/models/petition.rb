@@ -6,7 +6,12 @@ class Petition < ActiveRecord::Base
 		petitions = parsed_response["results"] #array
 
 		petitions.map! do |petition|
-			petition["title"]
+			{title: petition["title"],
+			body: petition["body"], 
+			status: petition["status"], 
+			created: petition["created"],
+			deadline: petition["deadline"],
+			signatures: petition["signatureCount"]}
 		end
 
 	end

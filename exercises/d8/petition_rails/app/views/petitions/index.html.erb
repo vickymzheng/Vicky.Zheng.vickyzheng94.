@@ -4,7 +4,17 @@
 <ol>
 <% @petitions.each do |petition| %>
 
-	<li><%= petition %></li>
+	<li><strong>Title: </strong><%= petition[:title] %><br/>
+		<strong>Body: </strong><%= petition[:body] %><br/>
+		<strong>Status: </strong><%= petition[:status] %><br/>
+		<strong>Created: </strong><%= petition[:created] %><br/>
+		<strong>Deadline: </strong><%= petition[:deadline] %><br/>
+		<strong>Signature Count: </strong><%= petition[:signatures] %>
+
+
+	</li> 
+
+	<br/>
 
 <% end %>
 </ol>
